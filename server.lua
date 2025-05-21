@@ -19,7 +19,7 @@ end
 Main.Init = function()
     local result = {}
 
-    for k,v in ipairs(Main.Get) do
+    for _,v in ipairs(Main.Get) do
         local get = Main.Convar(v)
         table.insert(result, get)
     end
